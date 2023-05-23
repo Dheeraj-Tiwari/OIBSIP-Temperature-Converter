@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter OIBSIP</title>
+</head>
+<body>
+    <div class="container">
+         <!-- Heading for the temperature converter -->
+        <div class="head">Temperature Converter</div>
+         <!-- Subheading explaining the supported temperature units -->
+        <h1 class="head2">(Fahrenheit, Celsius, and Kelvin)</h1>
+        <div class="boxcontainer">
+            <!-- Input box for temperature value -->
+            <div class="box1">
+                <p><span style="color: rgb(0, 0, 0)">Degree</span></p>
+                <input type="number" class="ab" />
+            </div>
+            <!-- Dropdown for selecting the temperature unit -->
+            <div class="box1">
+                <p>Type</p>
+                <select id="unit">
+                    <option value="Fahrenheit"><b>Fahrenheit °F</b></option>
+                    <option value="Celsius"><b>Celsius °C</b></option>
+                    <option value="Kelvin"><b>Kelvin °K</b></option>
+                </select>
+            </div>
+        </div>
+          <!-- Container for displaying the converted temperature result -->
+        <div class="valuecontainer">
+            <p><b>Result</b></p>
+            <div class="value"></div>
+        </div>
+         <!-- Button to trigger the temperature conversion -->
+        <button onclick="convertTemperature()" class="button">
+            <h3>Convert</h3>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
